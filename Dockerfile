@@ -1,6 +1,6 @@
 FROM alpine:3.3
 
-ARG CONSUL_TEMPLATE_VERSION=0.12.2
+ENV CONSUL_TEMPLATE_VERSION=0.12.2
 
 RUN apk add --update curl && \
     curl -LO http://releases.hashicorp.com/consul-template/${CONSUL_TEMPLATE_VERSION}/consul-template_${CONSUL_TEMPLATE_VERSION}_linux_amd64.zip && \
